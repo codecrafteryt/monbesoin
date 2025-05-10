@@ -14,6 +14,8 @@ import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:monbesoin_app/data/helper/get_di.dart';
 import 'package:monbesoin_app/views/auth/splash_screen.dart';
 
+import 'views/views.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -39,7 +41,7 @@ class MyApp extends StatelessWidget {
           return GetMaterialApp(
             debugShowCheckedModeBanner: false,
             defaultTransition: Transition.leftToRight,
-            home: const SplashScreen(),
+            home: const Views(),
           );
         });
   }
